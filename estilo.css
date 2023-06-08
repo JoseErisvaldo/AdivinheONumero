@@ -1,0 +1,67 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+#container {
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+#card{
+    margin-top: 20px;
+    width: 150px;
+    height: 35px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+#numeros {
+    height: 10px;
+}
+#mensagem {
+    height: 10px;
+}
+#jogar {
+    margin-top: 15px;
+}
+#mensagem{
+    margin-top: 5px;
+}
+button{
+    margin-top: 5px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(0, 195, 255);
+    border: none;
+}
+button:hover {
+    background-color: rgb(0, 255, 106);
+    cursor: pointer;
+}
+#container-placar{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#placar-vitoria, #placar-derrota {
+    width: 50px;
+    height: 20px;
+    text-align: center;
+}
+#historicoJogos {
+    width: 100%;
+}
+#hisJogos {
+    height: 20px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Adivinhe o Numero</title>
+</head>
+<body>
+    <div id="container">
+        <h2>Adivinhe o numero </h2>
+        <div id="card">
+            <div class="cards"><h1></h1></div>
+        </div>
+        <div >
+            <h3>Historico das ultimas 20 rodas gerado</h3>
+            <div id="numeros"></div>
+        </div>
+        <div id=""><input id="jogar" type="number" placeholder="escolha um numero"></div>
+        <div id="mensagem"></div>
+        <button onclick="clicar()">Jogar</button>
+        <div id="container-placar">
+            <div class="placar">
+                <div class="vitoria">VIRORIA</div>
+                <div id="placar-vitoria">0</div>
+            </div>
+            <div class="placar">
+                <div class="derrota">DERROTA</div>
+                <div id="placar-derrota">0</div>
+            </div>
+        </div>
+        <div><h3>Seus jogos</h3></div>
+        <div id="historicoJogos">
+            <div><h3>Historico das ultima 20 jogadas</h3></div>
+            <div id="hisJogos"></div>
+        </div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
