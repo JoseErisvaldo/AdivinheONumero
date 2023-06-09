@@ -5,34 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <title>Adivinhe o Numero</title>
+    <title>Jogo de Adivinhação</title>
 </head>
 <body>
     <div id="container">
-        <h2>Adivinhe o numero de 0 a 20 </h2>
+        <div id="menu">
+            <div> <h3> Seu saldo é R$ <span id="saldo">100</span>  </h3></div>
+        </div>
+        <h2>Adivinhe o numero de 0 a 5 </h2>
         <div id="card">
             <div class="cards"><h1></h1></div>
         </div>
-        <div >
-            <h3>Historico das ultimas 20 rodas gerado</h3>
+        <div id="historicoJogos">
+            <h3>Historico das ultimas 20 rodadas gerado</h3>
+            <br>
             <div id="numeros"></div>
         </div>
+        <br>
+        <div>
+            <h3>Escolha um numero </h3></div>
         <div id=""><input id="jogar" type="number" placeholder="escolha um numero"></div>
+        <div id="myCash">
+            <h4>Valor da aposta</h4>
+            <div id=""><input id="aposta" type="number"></div>
+        </div>
+
         <div id="mensagem"></div>
+        <br>
         <button onclick="clicar()">Jogar</button>
         <div id="container-placar">
             <div class="placar">
-                <div class="vitoria">VIRORIA</div>
+                <div class="vitoria">VITORIAS</div>
                 <div id="placar-vitoria">0</div>
             </div>
             <div class="placar">
-                <div class="derrota">DERROTA</div>
+                <div class="derrota">DERROTAS</div>
                 <div id="placar-derrota">0</div>
             </div>
         </div>
         <div><h3>Seus jogos</h3></div>
         <div id="historicoJogos">
             <div><h3>Historico das ultima 20 jogadas</h3></div>
+            <br>
             <div id="hisJogos"></div>
         </div>
     </div>

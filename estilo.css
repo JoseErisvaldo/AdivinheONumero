@@ -1,67 +1,134 @@
-*{
-    margin: 0 auto;
+* {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
 #container {
-    color: rgb(0, 0, 0);
-    padding: 15px;
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
 }
-#card{
-    margin-top: 20px;
-    width: 150px;
-    height: 35px;
-    border: 1px solid rgb(0, 0, 0);
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
-.cards{
+
+#menu {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#saldo {
+    font-weight: bold;
+    color: #333;
+}
+
+#card {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    
-}
-#numeros {
-    height: 10px;
-}
-#mensagem {
-    height: 10px;
-}
-#jogar {
-    margin-top: 15px;
-}
-#mensagem{
-    margin-top: 5px;
-}
-button{
-    margin-top: 5px;
-    width: 100px;
-    height: 30px;
-    background-color: rgb(0, 195, 255);
-    border: none;
-}
-button:hover {
-    background-color: rgb(0, 255, 106);
-    cursor: pointer;
-}
-#container-placar{
-    margin-top: 10px;
-    width: 100%;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-#placar-vitoria, #placar-derrota {
-    width: 50px;
-    height: 20px;
+
+.cards {
     text-align: center;
 }
+
+.cards h1 {
+    font-size: 48px;
+    color: #333;
+    margin: 0;
+}
+
 #historicoJogos {
+    margin-bottom: 20px;
+}
+
+#numeros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 15px;
+}
+
+#numeros span {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
     width: 100%;
 }
+
+#mensagem {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#container-placar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.placar {
+    text-align: center;
+    flex-basis: 48%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vitoria,
+.derrota {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#placar-vitoria,
+#placar-derrota {
+    font-size: 24
+}
 #hisJogos {
-    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 15px;
 }
